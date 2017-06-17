@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+body {background: #f9f9f9 url(assets/img/page-bg-1.jpg);}
+html, body {
+  font-size:12px;
+  line-height:18px;
+  height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.gallery-icons {
+  z-index: 9;
+  position:absolute;
+  bottom: 0px;
+  opacity: 0;
+  right: 0px;
+  width: 89px;
+  height: 42px;
+  display: block;
+}
+
+a.item-zoom-link {
+  height: 42px;
+  width: 42px;
+  background: #ffffff url(assets/img/gallery-item-icons.png) no-repeat;
+  background-position: 0px 0px;
+  position:absolute;
+  display: block;
+}
+a.item-details-link {
+  height: 42px;
+  width: 42px;
+  background: #ffffff url(assets/img/gallery-item-icons.png) no-repeat;
+  background-position: -42px 0px;
+  position:absolute;
+  left: 47px;
+  display: block;
+}
+.hovertest:hover .gallery-icons
+{
+  opacity: 1;
+}
+
+a.item-zoom-link:hover {background: #d8450b url(assets/img/gallery-item-icons.png) no-repeat;}
+a.item-details-link:hover {background: #d8450b url(assets/img/gallery-item-icons.png) no-repeat; background-position: -42px 0px;}
+
+/* Large Desktop Size */
