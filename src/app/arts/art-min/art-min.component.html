@@ -1,0 +1,15 @@
+<div class="w3-display-container hovertest w3-hover-shadow">
+  <img src="assets/img/gallery/arts/min/{{art.id}}.jpg">
+  <div class="w3-display-bottomright w3-container">
+    <div class="gallery-icons ">
+      <a href="assets/img/gallery/arts/max/{{art.id}}.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+      <a  class="item-details-link" (click)="open()"></a>
+    </div>
+
+  </div>
+</div>
+
+<span class="art-details">
+            <a href="#">{{art.name}}</a>
+            <p>{{art.author.name}}</p>
+      </span>

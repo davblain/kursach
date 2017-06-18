@@ -1,0 +1,79 @@
+
+<div class="modal-header">
+  <h2 class="modal-title">Детальная информация</h2>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-6">
+      <img class="img-thumbnail" src="assets/img/gallery/arts/max/{{id}}.jpg">
+    </div>
+    <div class="col-6">
+      <h2>{{art.name}}</h2>
+      <h5>Описание:</h5>
+      <textarea class="form-control" rows="8" placeholder="What's up?" readonly>{{art.description}}</textarea>
+
+      <ul class="project-info">
+        <li>
+
+            <div class="row">
+              <div class="col-10">
+                <h6>Автор:</h6>
+                {{art.author.name}}
+              </div>
+              <div class="col-2">
+                <button type="button" class="btn btn-sm" aria-label="Left Align">
+                  <i class="fa fa-pencil" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+        <li>
+          <div class="row">
+            <div class="col-10">
+              <h6>Год:</h6>
+              {{art.yearOfCreation}}
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-sm" aria-label="Left Align">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col-10">
+              <h6>Тип:</h6>
+              {{art.type.name}}
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-sm" aria-label="Left Align">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+          <div class="col-10">
+            <h6>Жанр:</h6>
+            {{art.genre.name}}
+          </div>
+          <div class="col-2">
+            <button type="button" class="btn btn-sm" aria-label="Left Align">
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<div class="modal-footer">
+  <button class="btn btn-secondary" (click)="activeModal.close('Close click')">Close</button>
+</div>

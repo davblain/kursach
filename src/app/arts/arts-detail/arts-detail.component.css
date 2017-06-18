@@ -1,0 +1,18 @@
+img
+{
+  width: 100%;
+
+}
+.project-info {
+  margin: 0px 0px 40px 0px;
+  padding: 0px;
+}
+.project-info li {
+  list-style: none;
+  border-bottom: 1px dashed #a9a9a9;;
+  padding: 10px; }
+.project-info li h6 {display: inline; margin-right: 5px;}
+.right
+{
+  text-align: right;
+}

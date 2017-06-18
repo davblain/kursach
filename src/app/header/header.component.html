@@ -1,0 +1,28 @@
+<div class="row header"><!-- Begin Header -->
+
+  <!-- Logo
+  ================================================== -->
+  <div class="col-5 logo">
+    <a href="/"><img src="assets/img/piccolo-logo.png" alt="" /></a>
+    <h5>Big Things... Small Packages</h5>
+  </div>
+
+  <!-- Main Navigation
+  ================================================== -->
+  <div class="col-7 navigation">
+    <div class="navbar hidden-phone ">
+
+      <ul class="nav nav-pills float-right">
+        <li class="nav-item" [routerLinkActive]="['active']"><a class="nav-link" routerLink="/home" (click)="onSelect('home')">Home</a></li>
+        <li class="nav-item" [routerLinkActive]="['active']"><a class="nav-link" routerLink="/arts" (click)="onSelect('arts')">Arts</a></li>
+        <li class="nav-item" [routerLinkActive]="['active']"><a class="nav-link" routerLink="/authors" (click)="onSelect('authors')">Authors </a></li>
+        <li class="nav-item" [routerLinkActive]="['active']"><a class="nav-link" routerLink="/collections" (click)="onSelect('collections')">Collections</a></li>
+        <li class="nav-item" [routerLinkActive]="['active']"><a class="nav-link" routerLink="/expositions" (click)="onSelect('expositions')">Expositions</a></li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+</div>

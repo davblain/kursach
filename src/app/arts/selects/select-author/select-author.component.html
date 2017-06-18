@@ -1,0 +1,16 @@
+
+<ng-template #rt let-r="result" let-t="term">
+  {{ r.name}}
+</ng-template>
+
+
+
+  <div class="form-group" [class.has-danger]="searchFailed">
+    <label for="typeahead-http">Введите автора:</label>
+    <input id="typeahead-http" type="text" class="form-control" [(ngModel)]="model" [inputFormatter]="formatter" [ngbTypeahead]="search"  [resultTemplate]="rt" placeholder="Поиск" />
+    <span *ngIf="searching">Поиск...</span>
+    <div class="form-control-feedback" *ngIf="searchFailed">Извините нет соединения с базой данных</div>
+  </div>
+
+
+

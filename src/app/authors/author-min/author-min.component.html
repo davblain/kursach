@@ -1,0 +1,14 @@
+<div class="w3-display-container hovertest w3-hover-shadow">
+  <img [defaultImage]="defaultImage" lazyLoad="assets/img/gallery/authors/min/{{author.id}}.jpg" [offset]="offset" errorImage="assets/img/gallery/authors/min/default.jpg">
+  <div class="w3-display-bottomright w3-container">
+    <div class="gallery-icons ">
+      <a href="assets/img/gallery/authors/max/{{author.id}}.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+      <a  class="item-details-link" (click)="open()"></a>
+    </div>
+
+  </div>
+</div>
+
+<span class="art-details">
+            <a href="#">{{author.name}}</a>
+      </span>

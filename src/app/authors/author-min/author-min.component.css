@@ -1,0 +1,61 @@
+.ul
+{
+  padding: 0;
+}
+img
+{
+  width: 100%
+}
+figure {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+
+figure img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+figure:hover img {
+  opacity: .5;
+}
+
+
+.art-details {
+  background:#f8f8f8;
+  display: block;
+  padding:10px;
+  border-bottom: 1px dotted #a9a9a9;
+  font-family: Georgia;
+  font-style: italic;
+
+
+  max-width: 100%;
+}
+.art-details a {
+  margin: 0px;
+  font-size: 12px;
+  font-style: normal;
+  text-shadow:none;
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  text-transform:uppercase;
+}
+.art-details {color: #6f6f6f;}
+.art-details a {color: #333333;}
+.art-details a:hover {color:#d8450b; text-decoration: none;}
+
+p
+{
+  width: 100%;
+}
+.my-modal-window .modal-dialog
+{
+  width :90%;
+  min-width: 800px;
+  max-width: 800px;
+}

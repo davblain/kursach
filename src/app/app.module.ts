@@ -19,6 +19,9 @@ import {AuthorService} from './authors/service/author.service';
 import { ArtsSearchComponent } from './arts/arts-search/arts-search.component';
 import { SelectArtsComponent } from './arts/selects/select-arts/select-arts.component';
 import { ArtMinComponent } from './arts/art-min/art-min.component';
+import { AuthorListComponent } from './authors/author-list/author-list.component';
+import { AuthorMinComponent } from './authors/author-min/author-min.component';
+import {LazyLoadImageModule} from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,8 @@ import { ArtMinComponent } from './arts/art-min/art-min.component';
     ArtsSearchComponent,
     SelectArtsComponent,
     ArtMinComponent,
+    AuthorListComponent,
+    AuthorMinComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,8 @@ import { ArtMinComponent } from './arts/art-min/art-min.component';
     HttpModule,
     NgbModule.forRoot(),
     AppRoutingModule,
-    JsonpModule
+    JsonpModule,
+    LazyLoadImageModule
   ],
   providers: [ArtsService, AuthorService],
   bootstrap: [AppComponent]

@@ -1,0 +1,95 @@
+<div class="modal-header">
+  <h2 class="modal-title">Детальная информация</h2>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-6">
+      <img class="img-thumbnail" [defaultImage]="defaultImage" lazyLoad="assets/img/gallery/authors/max/{{id}}.jpg" [offset]="offset" errorImage="assets/img/gallery/authors/max/default.jpg">
+    </div>
+    <div class="col-6">
+      <h2>{{author.name}}</h2>
+      <h5>Описание:</h5>
+      <textarea class="form-control" rows="8" placeholder="What's up?" readonly>{{author.description}}</textarea>
+
+      <ul class="project-info">
+        <li>
+
+          <div class="row">
+            <div class="col-10">
+              <h6>Автор:</h6>
+              {{author.name}}
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-sm" aria-label="Left Align">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col-10">
+              <h6>Дата рождения:</h6>
+              <form class="form-inline">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="author.dateOfBirth"   ngbDatepicker #d1="ngbDatepicker" >
+                    <div class="input-group-addon" (click)="d1.toggle()" >
+                      <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-sm" aria-label="Left Align">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col-10">
+              <h6>Дата смерти:</h6>
+              <form class="form-inline">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="author.dateOfDeath"   ngbDatepicker #d2="ngbDatepicker" >
+                    <div class="input-group-addon" (click)="d2.toggle()" >
+                      <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-sm" aria-label="Left Align">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col-10">
+              <h6>Коллекция:</h6>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-sm" aria-label="Left Align">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<div class="modal-footer">
+  <button class="btn btn-secondary" (click)="activeModal.close('Close click')">Close</button>
+</div>

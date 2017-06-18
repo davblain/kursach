@@ -20,6 +20,22 @@ h1, h2, h3, h4, h5, h6 {
   height: 42px;
   display: block;
 }
+.gallery
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.my-modal-window .modal-dialog
+{
+  width :auto;
+  min-width: 60%;
+  max-width: 60%;
+}
+.my-modal-window
+{
+  background: #f9f9f9 url(assets/img/page-bg-1.jpg);
+}
 
 a.item-zoom-link {
   height: 42px;
@@ -37,6 +53,7 @@ a.item-details-link {
   position:absolute;
   left: 47px;
   display: block;
+  cursor: pointer;
 }
 .hovertest:hover .gallery-icons
 {
